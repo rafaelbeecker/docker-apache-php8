@@ -8,10 +8,9 @@ A partir das instruções abaixo você terá em seu ambiente local o projeto rod
 
 ### Requisitos
 
-É necessário que tenha as seguintes ferramentas instaladas em seu ambiente local para executar o projeto.
-
 * [Docker](https://docs.docker.com/get-docker/)
 * [Docker Compose](https://docs.docker.com/compose/install/)
+* [mkcert](https://github.com/FiloSottile/mkcert)
 
 ### Build
 

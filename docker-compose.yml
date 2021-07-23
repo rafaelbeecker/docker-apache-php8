@@ -1,4 +1,3 @@
-
 version: "3.9"
 
 services:
@@ -6,17 +5,19 @@ services:
     build: .
     ports:
       - "80:80"
+      - "443:443"
     volumes:
       - ./html:/var/www/html
-      - ./config/sites-enabled:/etc/apache2/sites-enabled
-      - ./config/php/xdebug.ini:/usr/local/etc/php/conf.d/docker-xdebug.ini
-      - ./config/supervisor/apache.conf:/etc/supervisor/conf.d/apache2.conf
+      - ./config/php/php.ini:/etc/php7/conf.d/app.ini
+      - ./config/apache:/app/config/apache
+      - ./config/apache/httpd.conf:/etc/apache2/httpd.conf
+      - ./config/supervisor:/etc/supervisor
     environment:
       - DB_HOST=postgres
       - DB_USER=postgres
       - DB_PASS=postgres
       - DB_NAME=storage
-      - DB_DRIVER=pdo_pgsql    
+      - DB_PORT=5432
     container_name: webserver    
     hostname: webserver
     extra_hosts:

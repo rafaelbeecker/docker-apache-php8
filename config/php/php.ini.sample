@@ -1,0 +1,15 @@
+[error]
+error_reporting = E_ALL
+display_errors = On
+display_startup_errors = On
+log_errors = On
+
+[xdebug]
+zend_extension=/usr/lib/php7/modules/xdebug.so
+xdebug.remote_enable = 1
+xdebug.remote_handler = dbgp
+xdebug.remote_port = 9000
+xdebug.remote_autostart = 1
+xdebug.remote_connect_back = 0
+xdebug.remote_host = <IP_ADDRESS>
+xdebug.idekey = <IDE_KEY>
