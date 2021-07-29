@@ -1,6 +1,6 @@
-# Skeleton: Docker + Apache + PHP7.1
+# Skeleton: Docker + Apache + PHP8.0
 
-Estrutura base para aplicações web com Apache v2.4 e PHP v7.1
+Estrutura base para aplicações web com Apache v2.4 e PHP v8.0
 
 ## Introdução
 

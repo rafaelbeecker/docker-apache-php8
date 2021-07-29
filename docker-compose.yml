@@ -8,7 +8,7 @@ services:
       - "443:443"
     volumes:
       - ./html:/var/www/html
-      - ./config/php/php.ini:/etc/php7/conf.d/app.ini
+      - ./config/php/php.ini:/etc/php8/conf.d/50_xdebug.ini
       - ./config/apache:/app/config/apache
       - ./config/apache/httpd.conf:/etc/apache2/httpd.conf
       - ./config/supervisor:/etc/supervisor
